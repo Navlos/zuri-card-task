@@ -157,11 +157,11 @@
   .container .card-container {
     margin-bottom: -120px;
     position: relative;
-    height: 200px;
-    width:95%;
+    height: 220px;
+    width:90%;
   }
   .card-container .front {
-    padding: 20px;
+    padding:1em;
   }
 
   .front .image img {
