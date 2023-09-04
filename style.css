@@ -157,9 +157,29 @@
   .container .card-container {
     margin-bottom: -120px;
     position: relative;
-    height: 250px;
-    width:80%;
+    height: 200px;
+    width:95%;
   }
+  .card-container .front {
+    padding: 20px;
+  }
+
+  .front .image img {
+
+    width: 35px;
+    
+  }
+
+  .card-number {
+    padding: 2em 0;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .padding-100{
+    font-size: 16px;
+}
 }
 
 .card-container .front {
