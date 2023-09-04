@@ -1,0 +1,218 @@
+/* -------------- Google Fonts ----------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+
+
+/* utility classes */
+
+
+
+.padding-100 {
+  padding: .5em 0;
+}
+
+/*  general */
+.bold {
+  font-weight: 500;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  text-transform: uppercase;
+
+
+}
+
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding: 2rem;
+}
+
+@media(max-width:768px){
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #eee;
+    padding:1em;
+   
+  }
+}
+
+
+
+
+.container form {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  padding:1em;
+  width: 600px;
+  padding-top: 10em;
+}
+
+@media(max-width:768px){
+  .container form {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    
+    padding-top: 10em;
+  }
+}
+
+.container form .inputBox {
+  margin-top: 20px;
+}
+
+.container form .inputBox span {
+  display: block;
+  color: #999;
+  padding-bottom: 5px;
+}
+
+.input-field{
+  
+  justify-content: space-around;
+  gap: 1em;
+}
+
+.input-field input{
+  width:25%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  color: #444;
+
+}
+
+.container form .inputBox input,
+.container form .inputBox select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  color: #444;
+
+}
+
+.container form .flexbox {
+  display: flex;
+  gap: 15px;
+}
+
+.container form .flexbox .inputBox {
+  flex: 1 1 150px;
+
+}
+
+.container form .submit-btn {
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: .2s linear;
+}
+
+.container form .submit-btn:hover {
+  background: linear-gradient(92deg, black, #333);
+
+}
+
+
+
+/* ---------------- Card display styling ------------------------ */
+
+
+.container .card-container {
+  margin-bottom: -120px;
+  position: relative;
+  height: 250px;
+  width: 400px;
+}
+
+@media(max-width:768px){
+  .container .card-container {
+    margin-bottom: -120px;
+    position: relative;
+    height: 250px;
+    width:80%;
+  }
+}
+
+.card-container .front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to left, black, #110011);
+  border-radius: 5px;
+  backface-visibility: hidden;
+  color: #eee;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+  padding: 20px;
+}
+
+.card-container .front .image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+
+.front .image img {
+
+  width: 50px;
+  height: auto;
+}
+
+.card-number {
+  padding: 2em 0;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.container .card-container .front .flexbox {
+  display: flex;
+}
+
+.container .card-container .front .flexbox .box:nth-child(1) {
+  margin-right: auto;
+
+}
+
+.container .card-container .front .flexbox .box {
+  font-size: 15px;
+  color: #fff;
+
+}
+
+
+.errorText {
+  color: red;
+}

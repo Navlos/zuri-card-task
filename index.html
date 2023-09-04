@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Payment Card Page</title>
+    <!-- ------------ style sheet ----------------- -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card-container">
+            <div class="front">
+                <div class="image">
+                 <img src="image/chip.png" alt="">
+                 <img src="image/master-card.png" alt="card logo" id="logo">
+                </div>
+
+                <!-- --------- Display the card numbers------ -->
+                <div class = 'flex '>
+                    <p class="card-number bold padding-100" id="first-input-display">####</p>
+                    <p class="card-number bold padding-100" id="second-input-display">####</p>
+                    <p class="card-number bold padding-100" id="third-input-display">####</p>
+                    <p class="card-number bold padding-100" id="fouth-input-display">####</p>
+                </div>
+                <div class="flexbox">
+                    
+                    <div class="box">
+                        <span>card holder</span>
+                        <div class="card-holder-name bold padding-100" id="card-holder-name">Full name</div>
+                    </div>
+                    <div class="box">
+                        <span>expires</span>
+                        <div class="expiration padding-100">
+                            <span class="exp-month bold padding-100" id="exp-month">
+                                mm 
+                            </span> /
+                            <span class="exp-year bold " id="exp-year">
+                                year
+                            </span>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form action="" id="form">
+            <div class="inputBox">
+                <span>Card Number</span>
+               <div class="input-field flex">
+                <input type="text" name="" id="first-input" maxlength="4" required class="card-number-input">
+                <input type="text" name="" id="second-input" maxlength="4" required class="card-number-input">
+                <input type="text" name="" id="third-input" maxlength="4" required class="card-number-input">
+                <input type="text" name="" id="fouth-input" maxlength="4" required class="card-number-input">
+               </div>
+            </div>
+
+            <div class="inputBox">
+                <span>Card Holder</span>
+                <input type="text" class="card-holder-input" maxlength="20" required id="card-holder-input">
+            </div>
+
+            <div class="flexbox">
+                <div class="inputBox">
+                    <span>Expiration month</span>
+                    <select name="" id="month-input" class="month-input">
+                        <option value="month" selected disabled>Month</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <span>Expiration year</span>
+                        <select name="" id="year-input" class="year-input">
+                            <option value="year" selected disabled>Year</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                            
+                        </select>
+
+                </div>
+                <div class="inputBox">
+                        <span>CVV</span>
+                        <input type="text" name="" id="" maxlength="4" class="cvv-input">
+                </div>
+                
+
+               
+            </div>
+
+            <!-- submit button -->
+        <input type="submit" value="submit" class="submit-btn">
+        </form>
+        <p class="errorText" id="errorText"></p>
+    </div>
+
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
