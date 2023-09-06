@@ -93,7 +93,8 @@ var form = document.getElementById("form");
 var message = document.getElementById("message");
 form.addEventListener("submit", function(event) {
   event.preventDefault(); // Prevent the default form submission behavior
-  message.textContent = "Form submitted successfully 🎉🎉🎉"
+  message.textContent = "Your payment was successful 🎉🎉🎉";
+  message.style.backgroundColor = 'lightgreen';
   
 });
 

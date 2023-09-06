@@ -157,7 +157,7 @@
   .container .card-container {
     margin-bottom: -120px;
     position: relative;
-    height: 220px;
+    height: 230px;
     width:90%;
   }
   .card-container .front {
@@ -235,7 +235,6 @@
 
 .message{
   width: 90%;
-  background-color: lightgreen; /* Set the background color to light green */
   color: darkgreen;
   padding: 1em;
   margin-bottom: 2em;
