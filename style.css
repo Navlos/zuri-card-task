@@ -233,6 +233,11 @@
 }
 
 
-.errorText {
-  color: red;
+.message{
+  width: 90%;
+  background-color: lightgreen; /* Set the background color to light green */
+  color: darkgreen;
+  padding: 1em;
+  margin-bottom: 2em;
+  text-align: center;
 }

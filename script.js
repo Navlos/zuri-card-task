@@ -1,11 +1,5 @@
 
-// var firstDisplay = document.getElementById("first-input-display");
-// var secondInput = document.getElementById("second-input");
-// var secondDisplay = document.getElementById("second-input-display");
-// var thirdInput = document.getElementById("third-input");
-// var thirdDisplay = document.getElementById("third-input-display");
-// var fouthInput = document.getElementById("fouth-input");
-// var fouthDisplay = document.getElementById("fouth-input-display");
+
 var cardHolderInput = document.getElementById("card-holder-input");
 var cardHolder = document.getElementById("card-holder-name")
 var monthInput = document.getElementById("month-input")
@@ -91,6 +85,19 @@ function changeCardLogo(inputValue) {
     logo.src = "image/master-card.png"
   }
 }
+
+
+// add event listener to button
+
+var form = document.getElementById("form");
+var message = document.getElementById("message");
+form.addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent the default form submission behavior
+  message.textContent = "Form submitted successfully 🎉🎉🎉"
+  
+});
+
+
 
 
 
